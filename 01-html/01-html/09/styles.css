@@ -1,0 +1,31 @@
+:root {
+    --my-margin: 10px;
+}
+
+#main {
+    width: 1000px;
+    background-color: #FED049;
+    font-size: 0;
+}
+
+.item {
+    display: inline-block;
+    width: calc(25% - 2 * var(--my-margin));
+    background-color: #007580;
+    font-size: 16px;
+    vertical-align: middle;
+    margin: var(--my-margin);
+}
+
+.item:first-letter {
+    font-size: 30px;
+    color: aqua;
+}
+
+.item:nth-child(even) {
+    background: #007580
+}
+
+.item:nth-child(odd) {
+    background: #282846
+}

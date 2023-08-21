@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 80px;
+    background-color: green;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-center {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.left-center {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-center {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.right-center {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.center-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.box-child {
+    height: 40px;
+    width: 80px;
+    background-color: red;
+    position: absolute;
+    text-align: center;
+}
+
+.ctl {
+    top: 0;
+    left: 0;
+    transform: translate(-100%, -100%);
+}
+
+.cbl {
+    bottom: 0;
+    left: 0;
+    transform: translate(-100%, 100%);
+}
+
+.cbr {
+    bottom: 0;
+    right: 0;
+    transform: translate(100%, 100%);
+}
+
+.ctr {
+    top: 0;
+    right: 0;
+    transform: translate(100%, -100%);
+}
